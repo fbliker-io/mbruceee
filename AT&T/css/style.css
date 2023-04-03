@@ -233,12 +233,12 @@ body {
     cursor: pointer;
 }
 
-  @media only screen and (max-width: 420px){
+  @media screen and (max-width: 420px){
     .ffform{
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.0);
       }
   }
-  @media only screen and (max-width: 399px){
+  @media screen and (max-width: 399px){
     .ffform{
     
         height: 85vh;
