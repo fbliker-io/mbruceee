@@ -237,6 +237,9 @@ body {
     .ffform{
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.0);
       }
+      input{
+          font-size: 16px;
+      }
   }
   @media screen and (max-width: 399px){
     .ffform{
